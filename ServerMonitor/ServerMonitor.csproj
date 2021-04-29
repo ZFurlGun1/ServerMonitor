@@ -87,6 +87,13 @@
       <DependentUpon>AddSiteUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Tool\LocalView.cs" />
+    <Compile Include="Tool\MainInterface\SiteControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tool\MainInterface\SiteControl.Designer.cs">
+      <DependentUpon>SiteControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\MainInterface\StartScanner.cs" />
     <EmbeddedResource Include="SystemMain.resx">
       <DependentUpon>SystemMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +108,9 @@
     </Compile>
     <EmbeddedResource Include="Tool\AddSite\AddSiteUserControl.resx">
       <DependentUpon>AddSiteUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool\MainInterface\SiteControl.resx">
+      <DependentUpon>SiteControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

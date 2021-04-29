@@ -19,7 +19,12 @@ namespace ServerMonitor.Tool.AddSite
 
         private void button1_Click(object sender, EventArgs e)
         {
-         AddSite.AddHelper.   TextWebInfo(textBox1.Text, textBox2.Text, richTextBox1, richTextBox2);
+            AddHelper.TextWebInfo(textBox1.Text, textBox2.Text, richTextBox1, richTextBox2);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddHelper.SaveWebSiteJson(textBox1.Text,textBox2.Text,textBox3.Text);
         }
     }
 }

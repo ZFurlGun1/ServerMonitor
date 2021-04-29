@@ -23,19 +23,24 @@ namespace ServerMonitor
         private void InitView()
         {
             FloderHelper.FloderExits(StaticValue.UserInfoPath,true);
+            Helper.ViewHelper.GroupBoxHelper.Replace(groupBox1, new Tool.MainInterface.SiteControl());
+            //   listBox1.Items.AddRange(Tool.LocalView.AddListItems());
 
-         //   listBox1.Items.AddRange(Tool.LocalView.AddListItems());
-           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Helper.ViewHelper.GroupBoxHelper.Replace(groupBox1, new Tool.AddSite.AddSiteUserControl());
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             FloderHelper.OpenFloder(".\\");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Helper.ViewHelper.GroupBoxHelper.Replace(groupBox1, new Tool.MainInterface.SiteControl());
         }
     }
 }
