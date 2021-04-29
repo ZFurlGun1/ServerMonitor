@@ -16,5 +16,10 @@ namespace ServerMonitor.Tool.AddSite
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+         AddSite.AddHelper.   TextWebInfo(textBox1.Text, textBox2.Text, richTextBox1, richTextBox2);
+        }
     }
 }
