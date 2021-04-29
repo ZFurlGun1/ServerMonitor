@@ -87,6 +87,13 @@
       <DependentUpon>AddSiteUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Tool\LocalView.cs" />
+    <Compile Include="Tool\Mail\MailHelper.cs" />
+    <Compile Include="Tool\Mail\MailUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tool\Mail\MailUserControl.Designer.cs">
+      <DependentUpon>MailUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tool\MainInterface\SiteControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -108,6 +115,9 @@
     </Compile>
     <EmbeddedResource Include="Tool\AddSite\AddSiteUserControl.resx">
       <DependentUpon>AddSiteUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool\Mail\MailUserControl.resx">
+      <DependentUpon>MailUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tool\MainInterface\SiteControl.resx">
       <DependentUpon>SiteControl.cs</DependentUpon>

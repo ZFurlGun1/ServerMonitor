@@ -44,5 +44,11 @@ namespace ServerMonitor
         {
             Helper.ViewHelper.GroupBoxHelper.Replace(groupBox1, new Tool.MainInterface.SiteControl());
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Helper.ViewHelper.GroupBoxHelper.Replace(groupBox1, new Tool.Mail.MailUserControl());
+       
+        }
     }
 }
