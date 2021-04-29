@@ -23,14 +23,19 @@ namespace ServerMonitor
         private void InitView()
         {
             FloderHelper.FloderExits(StaticValue.UserInfoPath,true);
-            List<string> ReadAllLine = FileHelper.ReadAllLine(StaticValue.UserInfoPath);
-            listBox1.Items.AddRange(ReadAllLine.ToArray());
+
+         //   listBox1.Items.AddRange(Tool.LocalView.AddListItems());
            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FloderHelper.OpenFloder(".\\");
         }
     }
 }

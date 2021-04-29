@@ -90,6 +90,28 @@ namespace ServerMonitor.Helper.Currency
             return FileName;
         }
 
+        /// <summary>
+        /// 获取文件名 不带路径和后缀
+        /// </summary>
+        /// <param name="FilePath"></param>
+        /// <param name="Pattern"></param>
+        /// <returns></returns>
+        public static string GetFileNameWithoutExtension(String FilePath)
+        {
+
+            String FileName = "";
+            try
+            {
+                FileName = Path.GetFileNameWithoutExtension(FilePath);
+
+            }
+            catch (Exception ex)
+            {
+                PrintLog.Log("当前是没有任何文件需要下载的情况，文件夹没有创建。");
+                PrintLog.Log(ex);
+            }
+            return FileName;
+        }
 
 
         /// <summary>

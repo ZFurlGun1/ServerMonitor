@@ -79,6 +79,13 @@
     <Compile Include="Helper\ViewHelper\TextBoxHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tool\AddSite\AddSiteUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tool\AddSite\AddSiteUserControl.Designer.cs">
+      <DependentUpon>AddSiteUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\LocalView.cs" />
     <EmbeddedResource Include="SystemMain.resx">
       <DependentUpon>SystemMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +98,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tool\AddSite\AddSiteUserControl.resx">
+      <DependentUpon>AddSiteUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
