@@ -31,7 +31,14 @@ namespace ServerMonitor.Helper.Currency
             Helper.Currency.FileHelper.AppendUTF8Text(StaticValue.TempPath+ Label + DateTime.Now.ToFileTime()+".txt",Content);
         }
 
-       
+        internal static void ReflushLog(string urlLogPath, List<string> logList, string line)
+        {
+            FileHelper.AppendUTF8Text(urlLogPath, line);
+            logList.Add(line);
+
+        }
+
+
 
 
         /// <summary>

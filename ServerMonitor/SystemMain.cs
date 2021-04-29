@@ -23,6 +23,8 @@ namespace ServerMonitor
         private void InitView()
         {
             FloderHelper.FloderExits(StaticValue.UserInfoPath,true);
+            FloderHelper.FloderExits(StaticValue.OldLogPath, true);
+            FloderHelper.FloderExits(StaticValue.SiteLogFloderPath, true);
             Helper.ViewHelper.GroupBoxHelper.Replace(groupBox1, new Tool.MainInterface.SiteControl());
             //   listBox1.Items.AddRange(Tool.LocalView.AddListItems());
 

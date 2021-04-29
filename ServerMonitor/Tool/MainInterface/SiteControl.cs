@@ -25,7 +25,7 @@ namespace ServerMonitor.Tool.MainInterface
 
         private void button1_Click(object sender, EventArgs e)
         {
-          S  listBox1.Items.Count;
+            SiteScanner.Start(listBox1);
         }
     }
 }

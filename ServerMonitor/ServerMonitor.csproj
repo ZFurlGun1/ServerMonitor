@@ -93,7 +93,7 @@
     <Compile Include="Tool\MainInterface\SiteControl.Designer.cs">
       <DependentUpon>SiteControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tool\MainInterface\StartScanner.cs" />
+    <Compile Include="Tool\MainInterface\SiteScanner.cs" />
     <EmbeddedResource Include="SystemMain.resx">
       <DependentUpon>SystemMain.cs</DependentUpon>
     </EmbeddedResource>

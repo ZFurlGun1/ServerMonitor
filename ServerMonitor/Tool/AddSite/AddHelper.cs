@@ -16,7 +16,7 @@ namespace ServerMonitor.Tool.AddSite
             List<string> TempLink = HtmlHelper.GetLinkVlaueList(Shtml, Xpath);
             richTextBox2.Lines = TempLink.ToArray();
         }
-        class UserData {
+       public class UserData {
             string WebLink;
             string Xpath;
             string FileName;

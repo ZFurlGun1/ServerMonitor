@@ -16,12 +16,15 @@ namespace ServerMonitor.Helper
         public static bool ComboxShowFlag = false;
         private static bool printFlag = true;
         private static string tempPath = ".\\TempPath\\";
-        private static string downloadPath =TempPath+ "Download\\";
+        
   
         private static string binPath = ".\\Bin\\";
         private static string userInfoPath = BinPath + "UserInfo\\";
         private static string oldLogPath=tempPath+"OldLog\\";
+        private static string siteLogFloderPath = OldLogPath + "SiteLog\\";
         private static string printLogPath = TempPath + "Runlog.txt";
+        private static string urlLogPath = oldLogPath + "url.txt";
+        private static List<string> logList = FileHelper.ReadAllLine(UrlLogFile);
         //下载文件的辅助
         private static string ImgTemp = TempPath + "DownloadImg\\";
         private static string userAgent = "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36";
@@ -41,15 +44,24 @@ namespace ServerMonitor.Helper
         public static string ImgTemp1 { get => ImgTemp; set => ImgTemp = value; }
         public static string UserAgent { get => userAgent; set => userAgent = value; }
         public static string MoblieUserAgent { get => moblieUserAgent; set => moblieUserAgent = value; }
-        /// <summary>
-        /// 下载文件夹
-        /// </summary>
-        public static string DownloadPath { get => downloadPath; set => downloadPath = value; }
+     
         /// <summary>
         /// 放置旧的LOG
         /// </summary>
         public static string OldLogPath { get => oldLogPath; set => oldLogPath = value; }
-    
+        /// <summary>
+        /// 日志列表
+        /// </summary>
+        public static List<string> LogList { get => logList; set => logList = value; }
+        /// <summary>
+        /// l链接日志
+        /// </summary>
+        public static string UrlLogFile { get => urlLogPath; set => urlLogPath = value; }
+        /// <summary>
+        /// 站点日志缓存
+        /// </summary>
+        public static string SiteLogFloderPath { get => siteLogFloderPath; set => siteLogFloderPath = value; }
+
         /// <summary>
         /// 基础header
         /// </summary>
